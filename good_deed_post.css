@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E; /* Dark background */
+    color: #D4D4D4; /* Light grey text for readability */
+}
+
+/* Header */
+.header {
+    background-color: #2D2D2D; /* Darker shade for header */
+    padding: 20px;
+    color: #FFFFFF; /* White text for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 39px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: ;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 320px;
+    background-color: #252526; /* Dark sidebar */
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #D4D4D4; /* Light grey text */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin: 0;
+}
+
+.sidebar p {
+    color: #BBBBBB; /* Muted grey text */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #D4D4D4;
+}
+
+.sidebar ul li:hover {
+    background-color: #3C3C3C; /* Slightly lighter dark shade on hover */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 340px;
+    margin-right: 200px;
+    padding: 20px;
+    background-color: #2D2D2D; /* Darker background for content */
+}
+
+.stories {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.story {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #3C3C3C; /* Dark grey for story circles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #FFFFFF; /* White text for stories */
+}
+
+.feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #252526; /* Dark background for posts */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.post img {
+    width: 100%;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+.post .post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.post .post-info .likes,
+.post .post-info .comments {
+    padding: 20px;
+}
+
+.post .post-info i {
+    margin-right: 5px;
+}
+
+.abc {
+    margin-top: 80%;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+.add-photo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F97300; /* Bright orange for contrast */
+    color: #FFFFFF; /* White text for button */
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.add-photo:hover {
+    background-color: #cc5a00; /* Darker orange on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1E1E1E; /* Dark footer */
+    color: #D4D4D4; /* Light grey text */
+}
+
+.all {
+    margin-left: 340px;
+}
+
+button {
+    background-color: #3C3C3C; /* Dark button */
+    border: none;
+    width: 95%;
+    cursor: pointer;
+    color: #D4D4D4; /* Light text */
+}
+
+button:hover {
+    background-color: #4E4E4E; /* Slightly lighter button on hover */
+}
+
+.request {
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.image-container {
+    padding: 20px;
+}
+.main-content{
+    width: 100%;
+    background-color: transparent;
+}
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+button {
+    background-color: #F97300; /* Bright orange button */
+    border: none;
+    width: 95%;
+    padding: 10px;
+    cursor: pointer;
+    color: #FFFFFF; /* White text */
+}
+
+button:hover {
+    background-color: #CC5A00; /* Darker orange on hover */
+}
+
+input,
+textarea,
+select
+ {
+    padding: 10px;
+    border: 1px solid #444444;
+    background-color: #2D2D2D; /* Dark input fields */
+    border-radius: 5px;
+    color: #D4D4D4; /* Light grey text */
+}
+
+.request h2 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #2D2D2D; /* Dark section background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.request p {
+    margin: 10px;
+    color: #BBBBBB; /* Muted grey text */
+}
+
+.like-button {
+    background-color: #2D2D2D;
+    border: 1px solid #444444;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #D4D4D4; /* Light grey text */
+}
+
+.image-preview {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.like-button.liked {
+    background-color: #3C3C3C;
+}
+
+a {
+    text-decoration: none;
+    color: #F97300; /* Bright orange links */
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 7ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #F97300; /* Bright orange caret */
+    }
+}

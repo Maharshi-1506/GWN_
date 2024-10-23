@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="donation.css">
+    <title>GoodWillNet - Profile</title>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="header">
+            <h1><a href="#">GoodWillNet</a></h1>
+            <div>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <hr>
+        <img src="https://via.placeholder.com/80" alt="User Photo">
+        <h2>User Name</h2>
+        <p>@username</p>
+        <ul >
+            <a href="good_deed_post.html"><li>GOOD DEED FEED</li></a>
+            <a href="ask_help.html"><li>ASK HELP</li></a>
+            <a href="donation.html"><li>DONATION</li></a>
+            <a href="upcycle.html"><li>UPCYCLE</li></a>
+            <a href="ngo_connect.html"><li>NGO CONNECT</li></a>
+            
+            <div class="abc">
+                <a href="profile.html"><li>Profile</li></a>
+                <li>Setting</li>
+                <a href="signup.html"><li >Logout</li></a>
+            </div>
+        </ul>
+    </div>
+        
+            <main class="col-lg-9 col-md-8 ms-sm-auto px-md-4 main-content">
+                <h1>DONATION</h1>
+                <hr>
+                <div class="all text-center" >
+                    
+                    <h1>Welcome to GoodWillHelp Donation Page</h1>
+                    <p>Create your Donation and get raised by millions of lovely people around the world ⭐😊</p>
+                    <nav>
+                        <a href="#donationFormContainer"  class="btn btn-success" id="scrollToDonationForm"><button>Raise Donation</button></a>
+                    </nav>
+                
+                    <hr>
+                    <section id="requests">
+                        <hr>
+                        <!-- Donation Requests -->
+                        <div class="request mb-4">
+                            <div class="image-container mb-2">
+                                <img src="cry2.jpg" alt="Post Image" class="img-fluid rounded">
+                                <div class="button-container mt-2">
+                                    <button class="accept-btn btn btn-success">Accept</button>
+                                    <button class="decline-btn btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                            <h2>Help Needed with Tree Planting</h2>
+                            <p><strong>User:</strong> John Doe</p>
+                            <p><strong>Location:</strong> City Park</p>
+                            <p><strong>Description:</strong> We are organizing a tree planting event this Saturday and need volunteers to help plant saplings. Your assistance would be greatly appreciated!</p>
+                            <div class="image-container mb-2">
+                                <img src="crying1.jpg" alt="Post Image" class="img-fluid rounded">
+                                <div class="button-container mt-2">
+                                    <button class="accept-btn btn btn-success">Accept</button>
+                                    <button class="decline-btn btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                            <h2>Help Needed with Tree Planting</h2>
+                            <p><strong>User:</strong> John Doe</p>
+                            <p><strong>Location:</strong> City Park</p>
+                            <p><strong>Description:</strong> We are organizing a tree planting event this Saturday and need volunteers to help plant saplings. Your assistance would be greatly appreciated!</p>
+                            <div class="image-container mb-2">
+                                <img src="cry3.jpg" alt="Post Image" class="img-fluid rounded">
+                                <div class="button-container mt-2">
+                                    <button class="accept-btn btn btn-success">Accept</button>
+                                    <button class="decline-btn btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                            <h2>Help Needed with Tree Planting</h2>
+                            <p><strong>User:</strong> John Doe</p>
+                            <p><strong>Location:</strong> City Park</p>
+                            <p><strong>Description:</strong> We are organizing a tree planting event this Saturday and need volunteers to help plant saplings. Your assistance would be greatly appreciated!</p>
+                        </div>
+                        <!-- More requests can be added here -->
+                    </section>
+                </div>
+                <hr>
+                <!-- Donation Form -->
+                <div class="container" id="donationFormContainer">
+                    <form id="donationForm">
+                        <div class="progress-bar">
+                            <div class="progress" id="progress"></div>
+                            <div class="progress-step progress-step-active"></div>
+                            <div class="progress-step"></div>
+                            <div class="progress-step"></div>
+                        </div>
+                        <!-- Step 1: Contact Information -->
+                        <div class="form-step form-step-active">
+                            <h2>Step 1: Contact Information</h2>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <input type="text" id="phone" placeholder="Enter your phone number" required>
+                            <button type="button" class="btn" id="nextToStep2">Next</button>
+                        </div>
+                        <!-- Step 2: Donation Details -->
+                        <div class="form-step">
+                            <h2>Step 2: Donation Details</h2>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                            <input type="number" id="amount" placeholder="Enter donation amount" required>
+                            <textarea id="message" placeholder="Enter your message" rows="4"></textarea>
+                            <button type="button" class="btn" id="backToStep1">Back</button>
+                            <button type="button" class="btn" id="nextToStep3">Next</button>
+                        </div>
+                        <!-- Step 3: Donation Preview -->
+                        <div class="form-step">
+                            <h2>Step 3: Donation Preview</h2>
+                            <p id="previewEmail"></p>
+                            <p id="previewPhone"></p>
+                            <p id="previewName"></p>
+                            <p id="previewAmount"><span id="previewAmountValue"></span></p>
+                            <p id="previewMessage"></p>
+                            <button type="button" class="btn" id="backToStep2">Back</button>
+                            <button type="submit" class="btn" id="confirmBtn">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+       
+    </div>
+    
+    <script src="donation.js"></script>
+</body>
+</html>

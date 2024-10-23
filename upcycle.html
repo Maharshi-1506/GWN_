@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 R's Waste Management</title>
+
+    <link rel="stylesheet" href="upcycle.css">
+
+</head>
+
+<body>  
+   
+    
+    <div class="sidebar">
+        <div class="header">
+            <h1><a href="#">GoodWillNet</a></h1>
+            <div>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <hr>
+        <img src="https://via.placeholder.com/80" alt="User Photo">
+        <h2>User Name</h2>
+        <p>@username</p>
+        <ul >
+            <a href="good_deed_post.html"><li>GOOD DEED FEED</li></a>
+            <a href="ask_help.html"><li>ASK HELP</li></a>
+            <a href="donation.html"><li>DONATION</li></a>
+            <a href="upcycle.html"><li>UPCYCLE</li></a>
+            <a href="ngo_connect.html"><li>NGO CONNECT</li></a>
+            
+            <div class="abc">
+                <a href="profile.html"><li>Profile</li></a>
+                <li>Setting</li>
+                <a href="signup.html"><li >Logout</li></a>
+            </div>
+        </ul>
+    </div>
+        
+
+<div class="all">
+    <div class="main-content">
+        <h1>WASTE MANAGE</h1>
+        <hr>
+    </div>
+
+    <header>
+        <h1>Welcome to GoodWillNet</h1>
+        <p>Your platform for sharing and receiving acts of kindness</p>
+        <nav>
+            <a href="#user-input" style="text-decoration: none;"><button>Get Suggestions</button></a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>What are the 5 R's?</h2>
+            <p>The 5 R's represent a hierarchy of actions to reduce waste and manage resources more sustainably.
+                Each R prioritizes different actions:</p>
+            <ul>
+                <li><strong>Refuse:</strong> Say no to unnecessary items and packaging.</li>
+                <li><strong>Reduce:</strong> Minimize consumption and waste generation.</li>
+                <li><strong>Reuse:</strong> Use items multiple times or repurpose them.</li>
+                <li><strong>Recycle:</strong> Collect materials to be used as raw materials for new products.
+                </li>
+                <li><strong>Rot:</strong> Compost organic waste to return nutrients to the soil.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tips">
+        <div class="container">
+            <h2>Practical Tips for Each R</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3><i class="fas fa-ban"></i> Refuse</h3>
+                    <p>Say no to single-use plastics and unnecessary packaging. Bring your own reusable bags
+                        and containers.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-minus"></i> Reduce</h3>
+                    <p>Buy only what you need, and choose products with minimal packaging. Opt for digital
+                        copies whenever possible.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-sync"></i> Reuse</h3>
+                    <p>Reuse containers, bottles, and jars for storage. Donate or repurpose items you no
+                        longer need.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-recycle"></i> Recycle</h3>
+                    <p>Sort and recycle materials like paper, plastics, glass, and metals according to local
+                        recycling guidelines.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-seedling"></i> Rot</h3>
+                    <p>Compost fruit and vegetable scraps to create nutrient-rich soil for gardening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="user-input">
+        <div class="container">
+            <h2>Enter Your Waste Data</h2>
+            <form id="wasteForm">
+                <div class="form-group">
+                    <label for="wasteType">Type of Waste:</label>
+                    <input type="text" id="wasteType" name="wasteType" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                </div>
+                <button type="submit">Get Suggestions</button>
+            </form>
+        </div>
+      
+    </section>
+
+    <div class="container" id="suggestionsSection" style="display: none;">
+        <h2>Best Practices for Your Waste</h2>
+        <div id="suggestionsList">
+            <!-- Suggestions will be dynamically added here -->
+        </div>
+        <p id="suggestionOutput"></p>
+    </div></di>
+    <script src = "upcycle.js"></script>
+</body>
+</html>
